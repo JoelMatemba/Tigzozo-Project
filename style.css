@@ -1,0 +1,1103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "great";
+  src: url("GreatVibes-Regular-webfont.ttf");
+}
+@font-face {
+  font-family: "jose";
+  src: url("JosefinSans-Regular.ttf");
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+}
+.navigation .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-family: "jose", JosefinSans;
+}
+.navigation .light {
+  width: 40px;
+  height: 40px;
+  margin-right: 200px;
+  border-radius: 50%;
+}
+.navigation .ser {
+  color: #742296;
+  font-family: "jose", JosefinSans;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .logo {
+  margin-right: 415px;
+  margin-left: 10px;
+}
+.navigation body {
+  font-family: "montserrat", roboto;
+}
+.navigation header {
+  width: 100%;
+  height: 100%;
+  background: #e74c3c;
+  position: absolute;
+  overflow: auto;
+}
+.navigation .icon-1, .navigation .icon-2, .navigation .icon-3 {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transition: all 400ms cubic-bezier(0.84, 0.06, 0.52, 1.8);
+}
+.navigation .icon-1 {
+  transform: translateY(-8px);
+  animation-delay: 100ms;
+}
+.navigation .icon-3 {
+  transform: translateY(8px);
+  animation-delay: 250ms;
+}
+.navigation .hamburger-icon {
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  top: 33px;
+  left: 84%;
+  z-index: 1000;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  background: #742296;
+}
+.navigation .hamburger-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+.navigation .icon-1.a {
+  transform: rotate(40deg);
+}
+.navigation .icon-3.b {
+  transform: rotate(-40deg);
+}
+.navigation .icon-2.c {
+  opacity: 0;
+}
+.navigation .clear {
+  clear: both;
+}
+@keyframes slideIn {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 50%;
+    opacity: 1;
+  }
+}
+.navigation nav {
+  background: #0288D1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  z-index: 10;
+  opacity: 0;
+  transition: all 600ms cubic-bezier(0.62, 0.04, 0.3, 1.56);
+  transition-delay: 100ms;
+}
+.navigation nav ul {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.navigation nav ul li {
+  list-style: none;
+  font-size: 24px;
+  color: #fff;
+  line-height: 2.2;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+}
+.navigation nav.show {
+  width: 100%;
+  opacity: 3;
+}
+.navigation .dark-blue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #64B5F6;
+  height: 100%;
+  width: 0%;
+  transition: all 500ms cubic-bezier(0.62, 0.04, 0.3, 1.8);
+  transition-delay: 50ms;
+  z-index: 5;
+  opacity: 1;
+}
+.navigation .dark-blue.slide {
+  width: 50%;
+  opacity: 1;
+}
+@keyframes shotup {
+  0% {
+    transform: translateY(300%);
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.navigation .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.navigation .content h1 {
+  font-size: 70px;
+  animation: shotup 600ms ease-in-out;
+  animation-delay: 300ms;
+}
+
+.Banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.Banner img {
+  height: 85vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Banner h1 {
+  width: 400px;
+  margin-top: 130px;
+  font-family: "jose", JosefinSans;
+}
+.Banner p {
+  width: 300px;
+  line-height: 20px;
+  font-family: "jose", JosefinSans;
+}
+.Banner .one {
+  margin-top: 70px;
+}
+.Banner .two {
+  margin-top: 70px;
+}
+.Banner .BANNER {
+  margin-left: 20px;
+}
+.Banner .button1 {
+  margin-top: 5px;
+  color: white;
+  background-color: #742296;
+  padding: 6px;
+  border: none;
+  font-family: "jose", JosefinSans;
+  margin-right: 18px;
+}
+.Banner .button2 {
+  margin-top: 5px;
+  border-color: #742296;
+  border-width: 3px;
+  padding: 3px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  font-family: "jose", JosefinSans;
+}
+.Banner .ptag1 {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #742296;
+  font-family: "jose", JosefinSans;
+}
+.Banner .ptag {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: "jose", JosefinSans;
+}
+.Banner i {
+  color: black;
+}
+
+.About {
+  margin-top: 120px;
+}
+.About h2 {
+  margin-left: 50px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-family: "jose", JosefinSans;
+}
+.About .caleb p {
+  margin-bottom: 0;
+  line-height: 20px;
+  font-family: "jose", JosefinSans;
+}
+.About .caleb .three {
+  height: 40vh;
+  width: 170px;
+  margin-top: -53px;
+}
+.About .caleb .four {
+  height: 40vh;
+  width: 170px;
+  margin-left: -4px;
+  margin-top: 65px;
+}
+.About .back {
+  background-image: url(Images/IMG-20240502-WA0025.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: repeat;
+  background-position: center;
+  width: 412px;
+  height: 51.5vh;
+  background-size: cover;
+}
+.About .stylez {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.About .stylez .five {
+  border-radius: 19px;
+}
+.About .stylez p {
+  margin-top: 10px;
+  line-height: 20px;
+  font-family: "jose", JosefinSans;
+}
+.About .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.About .button3 {
+  background-color: #742296;
+  color: white;
+  border: none;
+  padding: 6px;
+  font-family: "jose", JosefinSans;
+}
+
+.Services {
+  margin-top: 60px;
+  margin-bottom: 49px;
+}
+.Services h2 {
+  margin-left: 50px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-family: "jose", JosefinSans;
+}
+.Services .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Services .part1 {
+  background-image: url(Images/IMG-20240502-WA0028.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 337px;
+  position: relative;
+}
+.Services .part1 h4 {
+  color: white;
+  position: absolute;
+  top: 92%;
+  left: 40%;
+  font-family: "jose", JosefinSans;
+}
+.Services .part1 .arrow {
+  width: 30px;
+  height: 28px;
+  position: absolute;
+  top: 94.3%;
+  left: 91%;
+}
+.Services .purple {
+  background-color: #742296;
+  position: relative;
+  height: 80vh;
+  width: 337px;
+  color: white;
+}
+.Services .purple h3 {
+  margin-left: 30px;
+  font-size: 24px;
+  margin-top: 25px;
+  font-family: "jose", JosefinSans;
+}
+.Services .purple ol {
+  margin-left: 30px;
+  font-size: 22px;
+  line-height: 2.5rem;
+  font-family: "jose", JosefinSans;
+}
+.Services .purple .axe {
+  width: 30px;
+  height: 28px;
+  position: absolute;
+  top: 94.4%;
+  left: 91%;
+}
+.Services .purple .line {
+  height: 2px;
+  width: 93px;
+  background-color: white;
+  margin-top: -5px;
+  margin-left: -25px;
+}
+.Services .part2 {
+  background-image: url(Images/IMG-20240502-WA0023.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 337px;
+  position: relative;
+}
+.Services .part2 .arrow {
+  width: 30px;
+  height: 28px;
+  position: absolute;
+  top: 94.3%;
+  left: 91%;
+}
+.Services .part2 h4 {
+  color: white;
+  position: absolute;
+  top: 92%;
+  left: 40%;
+  font-family: "jose", JosefinSans;
+}
+
+.testimonial h2 {
+  margin-left: 50px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-family: "jose", JosefinSans;
+}
+.testimonial h4 {
+  font-size: 20px;
+  font-family: "jose", JosefinSans;
+  font-weight: 600;
+}
+.testimonial h5 {
+  font-size: 16px;
+  font-family: "jose", JosefinSans;
+  font-weight: 600;
+}
+.testimonial p {
+  line-height: 20px;
+  font-family: "jose", JosefinSans;
+}
+.testimonial .Tindo .icon1 {
+  background-image: url(Images/IMG-20240502-WA0024.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 60vh;
+  width: 400px;
+  margin-bottom: -30px;
+}
+.testimonial .Tindo .icon1 i {
+  position: absolute;
+  top: 82%;
+  left: 94%;
+  background-color: #742296;
+  color: white;
+  padding: 5px;
+  font-family: "jose", JosefinSans;
+}
+.testimonial .Mira .icon2 {
+  background-image: url(Images/IMG-20240502-WA0026.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 54vh;
+  width: 362px;
+  margin-top: -30px;
+}
+.testimonial .Mira .icon2 i {
+  position: absolute;
+  top: 87%;
+  left: 93%;
+  background-color: #742296;
+  color: white;
+  padding: 5px;
+  font-family: "jose", JosefinSans;
+}
+.testimonial .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.insta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.insta h2 {
+  font-size: 24px;
+  margin-bottom: -36px;
+  font-family: "jose", JosefinSans;
+}
+.insta .ig {
+  font-family: "great", GreatVibes;
+  font-weight: 600;
+}
+.insta .seven {
+  margin-top: 144px;
+}
+.insta h6 {
+  margin-top: 90px;
+  font-family: "jose", JosefinSans;
+}
+.insta .button4 {
+  color: white;
+  background-color: #742296;
+  border: none;
+  padding: 6px;
+  margin-top: 10px;
+  font-family: "jose", JosefinSans;
+}
+
+.Footer {
+  display: flex;
+  background-color: #742296;
+  color: white;
+  justify-content: space-evenly;
+  padding-top: 23px;
+  padding-bottom: 30px;
+  font-family: "jose", JosefinSans;
+}
+.Footer .tig {
+  height: 34px;
+  margin-bottom: 10px;
+}
+.Footer .space {
+  margin-left: 20px;
+}
+.Footer .hundred3 i {
+  margin-right: 10px;
+}
+.Footer .line1 {
+  height: 2px;
+  width: 70px;
+  background-color: white;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+.Footer .line2 {
+  height: 2px;
+  width: 94px;
+  background-color: white;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+.Footer .line3 {
+  height: 2px;
+  width: 93px;
+  background-color: white;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 576px) {
+  .navigation #nav a {
+    font-size: 36px;
+    line-height: 90px;
+    margin-left: -86px;
+  }
+  .navigation #nav .ser {
+    margin-right: 50px;
+  }
+  .navigation .light {
+    width: 25px;
+    height: 25px;
+    margin-right: 88px;
+  }
+  .navigation .nav .aba {
+    display: none;
+  }
+  .navigation .nav .ser {
+    display: none;
+  }
+  .navigation .nav .test {
+    display: none;
+  }
+  .navigation .logo {
+    margin-right: 95px;
+    height: 55px;
+  }
+  .Banner {
+    flex-direction: column;
+  }
+  .Banner h1 {
+    width: 356px;
+    margin-top: -10px;
+  }
+  .Banner .button1 {
+    margin-right: 10px;
+  }
+  .Banner .one {
+    margin-top: 26px;
+  }
+  .Banner .biko {
+    display: flex;
+  }
+  .Banner img {
+    height: 55vh;
+  }
+  .Banner .one {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 32px;
+  }
+  .Banner .two {
+    display: none;
+  }
+  .Banner .ten {
+    display: none;
+  }
+  .About h2 {
+    margin-top: -86px;
+    margin-bottom: 15px;
+    margin-left: 22px;
+    width: 231px;
+  }
+  .About .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .About .caleb p {
+    line-height: 18px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .About .caleb .four {
+    margin-bottom: 20px;
+    display: none;
+  }
+  .About .caleb .three {
+    display: none;
+  }
+  .About .back {
+    width: 340px;
+    height: 36vh;
+  }
+  .About .stylez {
+    margin-left: 17px;
+    margin-bottom: -20px;
+  }
+  .About .stylez p {
+    width: 359px;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 20px;
+  }
+  .Services h2 {
+    margin-left: 15px;
+    font-size: 20px;
+  }
+  .Services .container {
+    flex-direction: column;
+  }
+  .Services .container .part1 {
+    margin-bottom: 10px;
+    margin-left: 6px;
+  }
+  .Services .container .purple {
+    margin-bottom: 10px;
+    margin-left: 6px;
+  }
+  .Services .container .part2 {
+    margin-bottom: 10px;
+    margin-left: 6px;
+  }
+  .testimonial h2 {
+    margin-left: 20px;
+    margin-bottom: -20px;
+    font-size: 20px;
+    width: 306px;
+  }
+  .testimonial h4 {
+    margin-left: 10px;
+    margin-top: -24px;
+  }
+  .testimonial p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .testimonial h5 {
+    margin-left: 10px;
+  }
+  .testimonial .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial .Tindo .icon1 {
+    height: 50vh;
+    width: 329px;
+    margin-left: 10px;
+  }
+  .testimonial .Tindo .icon1 i {
+    top: 78%;
+    left: 92%;
+    display: none;
+  }
+  .testimonial .Mira .icon2 {
+    height: 54vh;
+    width: 332px;
+    margin-left: 7px;
+  }
+  .testimonial .Mira .icon2 i {
+    top: 82%;
+    left: 92.3%;
+    display: none;
+  }
+  .insta .seven {
+    display: none;
+  }
+  .insta img {
+    margin-top: 65px;
+    height: 34vh;
+  }
+  .insta h6 {
+    font-size: 17px;
+    margin-top: 26px;
+  }
+  .Footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 17px;
+    font-family: "jose", JosefinSans;
+  }
+  .Footer p {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  .Footer h6 {
+    font-size: 14px;
+  }
+  .Footer .hundred4 {
+    width: 50%;
+  }
+  .Footer .hundred2 {
+    width: 50%;
+    height: 170px;
+    margin-top: 16px;
+  }
+  .Footer .hundred {
+    width: 37%;
+    margin-right: 40px;
+  }
+  .Footer .hundred3 {
+    width: 50%;
+  }
+  .Footer .hundred3 i {
+    margin-right: 10px;
+  }
+  .Footer .space {
+    margin-left: 0px;
+  }
+  .Footer .line1 {
+    width: 60px;
+    margin-top: -8px;
+    margin-bottom: 7px;
+  }
+  .Footer .line2 {
+    width: 82px;
+    margin-top: -10px;
+    margin-bottom: 7px;
+  }
+  .Footer .line3 {
+    width: 82px;
+    margin-top: -10px;
+    margin-bottom: 7px;
+  }
+}
+@media only screen and (min-width: 578px) and (max-width: 768px) {
+  .hamburger-icon {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+  }
+  .navigation .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 35px;
+  }
+  .navigation a {
+    font-size: 20px;
+  }
+  .navigation .light {
+    width: 40px;
+    height: 40px;
+    margin-right: 0px;
+  }
+  .navigation .logo {
+    margin-right: 88px;
+    margin-left: 0px;
+    height: 7vh;
+  }
+  .Banner h1 {
+    margin-top: 53px;
+  }
+  .Banner p {
+    line-height: 28px;
+    font-size: 24px;
+  }
+  .Banner .one {
+    display: none;
+  }
+  .Banner .ten {
+    display: none;
+  }
+  .Banner .six {
+    margin-left: -35px;
+    height: 33vh;
+    margin-right: 15px;
+  }
+  .Banner .two {
+    margin-top: 22px;
+  }
+  .Banner img {
+    height: 40vh;
+  }
+  .Banner .button1 {
+    margin-right: 18px;
+  }
+  .Banner .ptag {
+    font-size: 22px;
+    width: 390px;
+  }
+  .Banner .ptag1 {
+    font-size: 24px;
+  }
+  .Banner .button1 {
+    font-size: 22px;
+  }
+  .Banner .button2 {
+    font-size: 24px;
+  }
+  .About {
+    margin-top: 57px;
+  }
+  .About .caleb p {
+    line-height: 31px;
+    width: 600px;
+    font-size: 27px;
+  }
+  .About .caleb .three {
+    width: 307px;
+    margin-top: 20px;
+    margin-left: 125px;
+  }
+  .About .caleb .four {
+    width: 280px;
+    display: none;
+  }
+  .About .stylez .five {
+    height: 70px;
+  }
+  .About .stylez p {
+    line-height: 34px;
+    font-size: 27px;
+    margin-top: 30px;
+  }
+  .About .button3 {
+    padding: 18px;
+    font-size: 21px;
+  }
+  .About .back {
+    width: 598px;
+    height: 52.5vh;
+    margin-right: 54px;
+    margin-top: 65px;
+  }
+  .About .container {
+    flex-direction: column;
+  }
+  .Services .part1 {
+    height: 35vh;
+  }
+  .Services .part1 .arrow {
+    top: 92%;
+    left: 87%;
+  }
+  .Services .purple {
+    height: 35vh;
+  }
+  .Services .purple h3 {
+    margin-left: 10px;
+    font-size: 22px;
+    margin-top: 25px;
+  }
+  .Services .purple ol {
+    margin-left: 8px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .Services .purple .axe {
+    top: 92%;
+    left: 86%;
+  }
+  .Services .part2 {
+    height: 35vh;
+  }
+  .Services .part2 .arrow {
+    top: 92%;
+    left: 87%;
+  }
+  .testimonial p {
+    line-height: 22px;
+    font-size: 17px;
+  }
+  .testimonial h5 {
+    font-size: 18px;
+  }
+  .testimonial .Tindo .icon1 {
+    height: 33vh;
+    width: 336px;
+  }
+  .testimonial .Tindo .icon1 i {
+    top: 79%;
+    left: 92.5%;
+  }
+  .testimonial .Mira {
+    margin-left: 53px;
+  }
+  .testimonial .Mira .icon2 {
+    height: 29vh;
+    width: 302px;
+  }
+  .testimonial .Mira .icon2 i {
+    top: 84%;
+    left: 92%;
+  }
+  .insta img {
+    height: 25vh;
+  }
+  .insta h6 {
+    font-size: 26px;
+  }
+  .insta .button4 {
+    font-size: 20px;
+  }
+  .Footer {
+    padding-top: 32px;
+  }
+  .Footer h6 {
+    font-size: 16px;
+  }
+  .Footer p {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .Footer .hundred3 {
+    width: 186px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+  .navigation .logo {
+    margin-left: 20px;
+    margin-right: 227px;
+  }
+  .navigation .hamburger-icon {
+    display: none;
+  }
+  .navigation a {
+    font-size: 20px;
+  }
+  .navigation .nav {
+    flex-wrap: nowrap;
+  }
+  .navigation .light {
+    margin-right: 0px;
+  }
+  .Banner img {
+    height: 25vh;
+  }
+  .Banner h1 {
+    margin-top: 97px;
+    width: 360px;
+  }
+  .Banner p {
+    font-size: 21px;
+  }
+  .Banner .button1 {
+    padding: 11px;
+    font-size: 16px;
+    margin-right: 28px;
+  }
+  .Banner .button2 {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .Banner .ptag1 {
+    font-size: 20px;
+  }
+  .Banner .ptag {
+    font-size: 18px;
+    width: 317px;
+  }
+  .About {
+    margin-top: 100px;
+  }
+  .About .caleb p {
+    font-size: 20px;
+  }
+  .About .caleb .three {
+    height: 22vh;
+    width: 218px;
+  }
+  .About .caleb .four {
+    height: 22vh;
+    width: 218px;
+  }
+  .About .back {
+    height: 27vh;
+  }
+  .About .stylez p {
+    font-size: 20px;
+  }
+  .About .button3 {
+    padding: 10px;
+    font-size: 19px;
+  }
+  .Services .part1 {
+    height: 30vh;
+    width: 264px;
+  }
+  .Services .part1 .arrow {
+    top: 93%;
+    left: 88%;
+  }
+  .Services .part2 {
+    height: 30vh;
+    width: 264px;
+  }
+  .Services .part2 .arrow {
+    top: 93%;
+    left: 89%;
+  }
+  .Services .purple {
+    height: 30vh;
+    width: 264px;
+  }
+  .Services .purple ol {
+    font-size: 18px;
+    line-height: 31px;
+  }
+  .Services .purple .axe {
+    top: 93%;
+    left: 89%;
+  }
+  .Services h3 {
+    font-size: 20px;
+  }
+  .testimonial h2 {
+    font-size: 22px;
+  }
+  .testimonial h4 {
+    font-size: 23px;
+  }
+  .testimonial h5 {
+    font-size: 22px;
+  }
+  .testimonial .Tindo .icon1 {
+    height: 28vh;
+  }
+  .testimonial .Tindo p {
+    font-size: 21px;
+  }
+  .testimonial .Mira .icon2 {
+    height: 24vh;
+  }
+  .testimonial .Mira p {
+    font-size: 21px;
+  }
+  .insta .allpics img {
+    height: 22vh;
+  }
+  .insta h6 {
+    font-size: 30px;
+  }
+  .insta .button4 {
+    padding: 14px;
+    font-size: 18px;
+  }
+  .Footer {
+    padding-top: 35px;
+  }
+  .Footer p {
+    font-size: 19px;
+  }
+  .Footer h6 {
+    font-size: 20px;
+  }
+  .Footer .line1 {
+    width: 89px;
+  }
+  .Footer .line2 {
+    width: 120px;
+  }
+  .Footer .line3 {
+    width: 116px;
+  }
+  .Footer .tig {
+    height: 45px;
+  }
+}
+@media (min-width: 768px) {
+  .hamburger-icon {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
