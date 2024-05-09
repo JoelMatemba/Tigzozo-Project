@@ -203,9 +203,10 @@
   font-family: "jose", JosefinSans;
 }
 .Banner p {
-  width: 300px;
-  line-height: 20px;
+  width: 407px;
+  line-height: 27px;
   font-family: "jose", JosefinSans;
+  font-size: 22px;
 }
 .Banner .one {
   margin-top: 70px;
@@ -504,7 +505,7 @@
   color: white;
   justify-content: space-evenly;
   padding-top: 23px;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   font-family: "jose", JosefinSans;
 }
 .Footer .tig {
