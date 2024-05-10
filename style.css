@@ -571,8 +571,12 @@
     flex-direction: column;
   }
   .Banner h1 {
-    width: 356px;
-    margin-top: -10px;
+    width: 351px;
+    margin-top: 12px;
+  }
+  .Banner p {
+    width: 337px;
+    font-size: 16px;
   }
   .Banner .button1 {
     margin-right: 10px;
@@ -647,10 +651,15 @@
   .Services .container .purple {
     margin-bottom: 10px;
     margin-left: 6px;
+    margin-top: 20px;
   }
   .Services .container .part2 {
     margin-bottom: 10px;
     margin-left: 6px;
+    margin-top: 20px;
+  }
+  .Services .container .line {
+    margin-top: -7px;
   }
   .testimonial h2 {
     margin-left: 20px;
