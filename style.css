@@ -237,13 +237,13 @@
 }
 .Banner .ptag1 {
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 20px;
   color: #742296;
   font-family: "jose", JosefinSans;
 }
 .Banner .ptag {
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "jose", JosefinSans;
 }
 .Banner i {
@@ -265,15 +265,19 @@
   font-family: "jose", JosefinSans;
 }
 .About .caleb .three {
-  height: 40vh;
-  width: 170px;
-  margin-top: -53px;
+  height: 43vh;
+  width: 214px;
+  margin-top: -33px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .About .caleb .four {
   height: 40vh;
-  width: 170px;
-  margin-left: -4px;
-  margin-top: 65px;
+  width: 200px;
+  margin-left: -5px;
+  margin-top: 72px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .About .back {
   background-image: url(Images/IMG-20240502-WA0025.jpg);
@@ -301,7 +305,7 @@
 .About .container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .About .button3 {
   background-color: #742296;
@@ -435,12 +439,11 @@
 }
 .testimonial .Tindo .icon1 i {
   position: absolute;
-  top: 82%;
+  top: 81.5%;
   left: 94%;
   background-color: #742296;
   color: white;
   padding: 5px;
-  font-family: "jose", JosefinSans;
 }
 .testimonial .Mira .icon2 {
   background-image: url(Images/IMG-20240502-WA0026.jpg);
@@ -454,12 +457,11 @@
 }
 .testimonial .Mira .icon2 i {
   position: absolute;
-  top: 87%;
-  left: 93%;
+  top: 87.5%;
+  left: 93.5%;
   background-color: #742296;
   color: white;
   padding: 5px;
-  font-family: "jose", JosefinSans;
 }
 .testimonial .container {
   display: flex;
@@ -601,11 +603,18 @@
   .Banner .ten {
     display: none;
   }
+  .Banner .ptag {
+    font-size: 18px;
+  }
+  .Banner .ptag1 {
+    font-size: 18px;
+  }
   .About h2 {
     margin-top: -86px;
     margin-bottom: 15px;
     margin-left: 22px;
     width: 231px;
+    font-size: 20px;
   }
   .About .container {
     display: flex;
@@ -646,17 +655,39 @@
   }
   .Services .container .part1 {
     margin-bottom: 10px;
-    margin-left: 6px;
+    margin-left: 27px;
+    height: 67vh;
+    width: 293px;
+  }
+  .Services .container .part1 .arrow {
+    top: 94%;
+    left: 89.6%;
   }
   .Services .container .purple {
     margin-bottom: 10px;
-    margin-left: 6px;
+    margin-left: 27px;
     margin-top: 20px;
+    height: 67vh;
+    width: 293px;
+  }
+  .Services .container .purple ol {
+    font-size: 20px;
+    line-height: 2.3rem;
+  }
+  .Services .container .purple .axe {
+    top: 93.6%;
+    left: 89.6%;
   }
   .Services .container .part2 {
     margin-bottom: 10px;
-    margin-left: 6px;
+    margin-left: 27px;
     margin-top: 20px;
+    height: 67vh;
+    width: 293px;
+  }
+  .Services .container .part2 .arrow {
+    top: 94%;
+    left: 89.6%;
   }
   .Services .container .line {
     margin-top: -7px;
@@ -846,9 +877,10 @@
     font-size: 27px;
   }
   .About .caleb .three {
-    width: 307px;
+    width: 516px;
+    height: 62vh;
     margin-top: 20px;
-    margin-left: 125px;
+    margin-left: 24px;
   }
   .About .caleb .four {
     width: 280px;
@@ -1109,5 +1141,95 @@
 @media (min-width: 768px) {
   .hamburger-icon {
     display: none;
+  }
+}
+@media only screen and (min-width: 1399.98px) {
+  .Banner img {
+    height: 68vh;
+    padding: 6px;
+  }
+  .Banner h1 {
+    margin-top: 157px;
+  }
+  .Banner .ptag {
+    font-size: 20px;
+  }
+  .Banner .ptag1 {
+    font-size: 20px;
+  }
+  .About h2 {
+    font-size: 26px;
+  }
+  .About .caleb p {
+    line-height: 26px;
+    font-size: 20px;
+  }
+  .About .caleb .four {
+    width: 248px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .About .caleb .three {
+    width: 239px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .About .stylez p {
+    line-height: 26px;
+    font-size: 20px;
+  }
+  .About .back {
+    width: 504px;
+    height: 50.5vh;
+  }
+  .About .button3 {
+    padding: 11px;
+    font-size: 16px;
+  }
+  .Services h2 {
+    font-size: 26px;
+  }
+  .Services .part1 {
+    height: 67vh;
+  }
+  .Services .part2 {
+    height: 67vh;
+  }
+  .Services .purple {
+    height: 67vh;
+  }
+  .Services .purple ol {
+    line-height: 2.7rem;
+  }
+  .testimonial h2 {
+    font-size: 26px;
+  }
+  .testimonial h4 {
+    font-size: 24px;
+  }
+  .testimonial h5 {
+    font-size: 22px;
+  }
+  .testimonial p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .testimonial .Tindo .icon1 {
+    height: 57vh;
+    width: 488px;
+  }
+  .testimonial .Mira .icon2 {
+    height: 50vh;
+    width: 433px;
+  }
+  .insta h2 {
+    font-size: 26px;
+  }
+  .insta h6 {
+    font-size: 20px;
+  }
+  .insta .button4 {
+    font-size: 18px;
+    padding: 8px;
   }
 }/*# sourceMappingURL=style.css.map */
