@@ -860,7 +860,7 @@
   }
   .Banner p {
     line-height: 28px;
-    font-size: 24px;
+    font-size: 22px;
   }
   .Banner .one {
     display: none;
@@ -1012,6 +1012,148 @@
   }
   .Footer .hundred3 {
     width: 186px;
+  }
+}
+@media only screen and (min-width: 766px) and (max-width: 767.9px) {
+  .navigation ul {
+    display: none;
+  }
+  .navigation .logo {
+    margin-right: 88px;
+    margin-left: 0px;
+    height: 12vh;
+  }
+  .Banner h1 {
+    font-size: 28px;
+    width: 340px;
+  }
+  .Banner p {
+    font-size: 18px;
+    width: 306px;
+  }
+  .Banner .button1 {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .Banner .button2 {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .Banner .ptag {
+    font-size: 18px;
+  }
+  .Banner .ptag1 {
+    font-size: 18px;
+  }
+  .Banner .six {
+    height: 64vh;
+    margin-top: 27px;
+  }
+  .Banner .two {
+    height: 64vh;
+    margin-top: 27px;
+  }
+  .About h2 {
+    width: 370px;
+  }
+  .About .caleb p {
+    line-height: 20px;
+    font-size: 17px;
+  }
+  .About .caleb .three {
+    display: none;
+  }
+  .About .back {
+    width: 426px;
+    height: 69.5vh;
+    margin-top: 26px;
+  }
+  .About .stylez .five {
+    height: 45px;
+  }
+  .About .stylez p {
+    line-height: 21px;
+    font-size: 17px;
+  }
+  .About .button3 {
+    padding: 6px;
+    font-size: 18px;
+  }
+  .Services .part1 {
+    height: 50vh;
+    margin-right: 15px;
+  }
+  .Services .part1 h4 {
+    top: 89%;
+  }
+  .Services .part1 .arrow {
+    top: 92%;
+    left: 85%;
+    width: 24px;
+    height: 20px;
+  }
+  .Services .part2 {
+    height: 50vh;
+    margin-left: 15px;
+  }
+  .Services .part2 h4 {
+    top: 90%;
+  }
+  .Services .part2 .arrow {
+    width: 25px;
+    height: 22px;
+    left: 85%;
+  }
+  .Services .purple {
+    height: 50vh;
+  }
+  .Services .purple h3 {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+  .Services .purple ol {
+    margin-left: 8px;
+    font-size: 12px;
+    line-height: 22px;
+    margin-left: 4px;
+  }
+  .Services .purple .axe {
+    top: 91%;
+    left: 84%;
+    width: 25px;
+    height: 22px;
+  }
+  .testimonial p {
+    line-height: 19px;
+  }
+  .testimonial .Tindo {
+    margin-left: -69px;
+  }
+  .testimonial .Tindo .icon1 {
+    height: 53vh;
+    width: 300px;
+  }
+  .testimonial .Tindo .icon1 i {
+    top: 78.5%;
+    left: 92%;
+  }
+  .testimonial .Mira .icon2 {
+    height: 50vh;
+    width: 302px;
+    margin-top: -10px;
+  }
+  .testimonial .Mira .icon2 i {
+    top: 87.5%;
+    left: 92.2%;
+  }
+  .insta img {
+    height: 43vh;
+  }
+  .insta h6 {
+    font-size: 23px;
+  }
+  .insta .button4 {
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1024px) {
